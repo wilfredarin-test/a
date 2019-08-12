@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.content {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.container:hover .content {
+  opacity: 1;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+  overflow:scrol;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Just a test</h2>
+
+<div class="container">
+  <img src="/w3images/notebook.jpg" alt="wilfredarin_err" style="width:100%;">
+  <div class="content">
+    <h1>Binod</h1>
+    <p>I am Binod Kumar Panda, I come from a family of four, My father is a central govt employee, my mother is a housewife, My elder brother is working in the IT industry in Bangalore. My mother tongue is Odiya however, I was born, brought up and have spent most of my time in Visakhapatnam where I completed schooling and my under graduation. I came to Bhubaneswar to complete my MBA in rural management from KIIT University and post which I was working as a young professional under Odisha and Andhra Government. My previous project was with TATA TRUSTS in the capacity of Sr. manager Projects and extensively worked on Migrant labors and vulnerable groups based out of Odisha. My interests are photography, travel, learning about new startups, and exploring vegetarian food.</p>
+  </div>
+</div>
+
+</body>
+</html>
