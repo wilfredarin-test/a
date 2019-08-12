@@ -1,25 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>CSRL Connect</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
-
+/* Style the body */
 body {
-  font-family: Arial;
-  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*  Column container 
+.row {  
+  display: -ms-flexbox; IE10 
+  display: flex;
+  -ms-flex-wrap: wrap; IE10 
+  flex-wrap: wrap;
+}
+ 
+*/
+/* Main column */
+.main {   
+  background-color: white;
+  padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
+
+/*try############################3 */
+.big_container{
+  display: flex;
+  flex-direction:row;
+  width:100%;
+  padding: 30px;
+}
 .container {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 40%;
+  margin:40px;
 }
-
 .container img {vertical-align: middle;}
-
 .content {
   transition: .5s ease;
   opacity: 0;
@@ -31,12 +140,9 @@ body {
   text-align: center;
   overflow:scroll;
 }
-
-
 .container:hover .content {
   opacity: 1;
 }
-
 .container .content {
   position: absolute;
   bottom: 0;
@@ -48,18 +154,78 @@ body {
   overflow:scrol;
   padding: 20px;
 }
+
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<h2>Just a test</h2>
+<div class="header">
+  <h1>CSRL CONNECT</h1>
+  <p></p>
+</div>
 
-<div class="container">
-  <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/WhatsApp%20Image%202019-08-12%20at%2012.40.16%20PM.jpeg?raw=true" alt="wilfredarin_err" style="width:100%;">
-  <div class="content">
-    <h1>Binod</h1>
-    <p>I am Binod Kumar Panda, I come from a family of four, My father is a central govt employee, my mother is a housewife, My elder brother is working in the IT industry in Bangalore. My mother tongue is Odiya however, I was born, brought up and have spent most of my time in Visakhapatnam where I completed schooling and my under graduation. I came to Bhubaneswar to complete my MBA in rural management from KIIT University and post which I was working as a young professional under Odisha and Andhra Government. My previous project was with TATA TRUSTS in the capacity of Sr. manager Projects and extensively worked on Migrant labors and vulnerable groups based out of Odisha. My interests are photography, travel, learning about new startups, and exploring vegetarian food.</p>
+<div class="navbar">
+  <a href="https://mobile.twitter.com/csrlngo" target="_blank">Twiter</a>
+  <a href="https://www.facebook.com/csrl.transforminglives/" target="_blank">Facebook</a>
+  <a href="https://www.youtube.com/channel/UC7BJUrawfgQUMUaAmTtk9-A/videos" target="_blank">
+  Youtube
+  </a>
+  <a href="https://csrlsuper30.blogspot.com/" target="_blank">Blog</a>
+</div>
+  <div class="main">
+    <h2>Another Successful Year(2018-19) Of Transforming Lives</h2>
+    <h5>Results</h5>
+    <div class="fakeimg" style="">
+      
+        <i class="arrow right"></i> Out of 699 Students under CSRL 11 month residential coaching programme, 634 Qualified in JEE MAINS 2019 with an overall success rate of 90.70%.<br><br>
+        <i class="arrow right"></i> Out of 634 qualified students, 610 appeared in JEE ADVANCED 2019 and 268 students qualified in JEE ADVANCED 2019 with an overall success rate of 43.93%.<br><br>
+        <i class="arrow right"></i> 52 girls qualified out of 126 girls who appeared in JEE ADVANCED 2019.</li><br><br>
+        <i class="arrow right"></i> Zoaya Zahoor from National Super 100 Delhi (and PLL sponsored student) achieved General-PH rank 98 and became the first girl candidate from NORTH KASHMIR to achieve this feat.<br><br>
+        <i class="arrow right"></i> In the first year of the project, 12 girls from Indian Oil Vidushi Super 30 Girls (Bhubaneswar) qualified out of 28 girls who appeared in JEE ADVANCED 2019.<br><br>
+        <i class="arrow right"></i> 12 candidates (out of 30 who appeared) qualified from Petronet Super 50. Waheed Ahmed from Petronet Kashmir, achieved CRL 5606.<br><br>
+      
+
+    </div>
+    
+    <br>
+
+  
+    
+    <h2>Launching Three New Centres</h2>
+    <div class="fakeimg" style="">
+      CSRL opens its first ever Medical Centre at Srinagar, Kashmir in association with ONGC,this is the 2nd centre with ONGC.Out of 30 enrolled at the centre 11 are female candidates and 20 are boys. All the students have been selected from Kashmir.<br><br>
+
+      CSRL also opens its 3rd centre with IOCL at Jaipur with 30 girls selected from the districts of Rajasthan.<br><br>
+
+      Ending July an all girls centre with IOC similar to the lines of IOC BBS ,NOIDA and Jaipur, in Patna shall be established.<br><br>
+    </div>
+      /* try test */
+    <h2>Just a test</h2>
+  <div class="big_container">
+  <div class="container">
+    <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/WhatsApp%20Image%202019-08-12%20at%2012.40.16%20PM.jpeg?raw=true" alt="wilfredarin_err" style="width:100%;">
+    <div class="content">
+      <h1>Binod</h1>
+      <p>I am Binod Kumar Panda, I come from a family of four, My father is a central govt employee, my mother is a housewife, My elder brother is working in the IT industry in Bangalore. My mother tongue is Odiya however, I was born, brought up and have spent most of my time in Visakhapatnam where I completed schooling and my under graduation. I came to Bhubaneswar to complete my MBA in rural management from KIIT University and post which I was working as a young professional under Odisha and Andhra Government. My previous project was with TATA TRUSTS in the capacity of Sr. manager Projects and extensively worked on Migrant labors and vulnerable groups based out of Odisha. My interests are photography, travel, learning about new startups, and exploring vegetarian food.</p>
+    </div>
   </div>
+
+  <div class="container">
+    <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/WhatsApp%20Image%202019-08-12%20at%2012.40.16%20PM.jpeg?raw=true" alt="wilfredarin_err" style="width:100%;">
+    <div class="content">
+      <h1>Binod</h1>
+      <p>I am Binod Kumar Panda, I come from a family of four, My father is a central govt employee, my mother is a housewife, My elder brother is working in the IT industry in Bangalore. My mother tongue is Odiya however, I was born, brought up and have spent most of my time in Visakhapatnam where I completed schooling and my under graduation. I came to Bhubaneswar to complete my MBA in rural management from KIIT University and post which I was working as a young professional under Odisha and Andhra Government. My previous project was with TATA TRUSTS in the capacity of Sr. manager Projects and extensively worked on Migrant labors and vulnerable groups based out of Odisha. My interests are photography, travel, learning about new startups, and exploring vegetarian food.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="https://www.facebook.com/csrl.transforminglives/" class="fa fa-facebook"></a>
+  <a href="https://mobile.twitter.com/csrlngo" class="fa fa-twitter"></a>
+  <p>Branding CSRL</p>
 </div>
 
 </body>
