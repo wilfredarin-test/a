@@ -101,7 +101,7 @@
   .prev, .next,.text {font-size: 11px}
   
   .slideshow-container {
-  width: 350px;
+  width:80%;
   position: relative;
   margin: auto;
   height: 300px;
