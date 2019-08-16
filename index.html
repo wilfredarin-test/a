@@ -175,52 +175,6 @@ body {
   padding:4px;
   text-align: center;
 }
-/* Galary things start */
-      .column {
-  float: left;
-  width: 23%;
-  
-  padding: 10px;
-}
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-  width:100%;
-  height:150px;
-}
-.column img:hover {
-  opacity: 1;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.galary {
-  position: relative;
-  display: none;
-}
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-/* galary things end here */
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 650px) {
   .navbar a {
@@ -263,18 +217,6 @@ body {
 
 
 
-<script type="text/javascript">function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}</script>
 
 
 </head>
@@ -525,66 +467,8 @@ After graduation from IIT BHU I joined back CSRL at kanpur centre.currently I  a
 </div> 
   
  
- <!--Test Begins here for galary-->
-    <div class="fakeimg" style="">
+ 
 
-          <div class="w3-container w3-center w3-allerta" style="background:rgb(0, 0, 102);"><h2 style="color:rgb(255,198,26);margin:20px 20px;padding:30px 20px;font-weight:bold;text-align:center;">Independence day Celebration</h2></div>
-          <h4> Click on the image to open. </h4>
-          <div class="row">
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/kanpur.jpeg?raw=true" alt="Super30" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/new_centre.jpeg?raw=true" alt="Super30"onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/x.jpeg?raw=true" alt="Super30" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/sivasagar.jpeg?raw=true" alt="Super30" onclick="myFunction(this);">
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/delhi.jpeg?raw=true" alt="Super30" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/jaipur.jpeg?raw=true" alt="Super30"onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/bad.jpeg?raw=true" alt="Super30" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="https://github.com/wilfredarin-test/wilfredarin-test.github.io/blob/master/ghy.jpeg?raw=true" alt="Super30" onclick="myFunction(this);">
-            </div>
-          </div>
-
-
-          <!-- The expanding image container -->
-          <div class="galary">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-            <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
-
-            <!-- Image text -->
-            <div id="imgtext"></div>
-        </div>
-
-
-
-
-        <!-- second -->
-
-        
-    <!-- second ends -->
-
-    </div>
-
-<!-- Test ends here for galary -->
 
 </div>
 
