@@ -101,10 +101,10 @@
   .prev, .next,.text {font-size: 11px}
   
   .slideshow-container {
-  width:260px;
+  width:210px;
   position: relative;
   margin: auto;
-  height: 220px;
+  height: 150px;
 }
 
   
